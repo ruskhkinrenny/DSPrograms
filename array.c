@@ -129,7 +129,7 @@ int main(){
                 }
             }
             if(!found)
-                printf(" Not found");
+                printf("Not found");
             break;
         case 5:
                 if(size==0){
@@ -157,7 +157,7 @@ int main(){
                     }
                     break;
                 case 2:
-                    printf("Performing Selection sort in decreasing order...\n");
+                    printf("Performing Selection sort in decreasing order..\n");
                     for(i=0;i<size;i++){
                         int max = i;
                         for(j=i+1;j<size;j++){
@@ -177,16 +177,16 @@ int main(){
                 }
 
                 if(updated){
-                    printf("Updated Array : ");
+                    printf("Updated Array: ");
                     for(i=0;i<size;i++)
                         printf("%d ", arr[i]);
                 }
             break;
         case 0:
-            printf("Program is requested to quit...");
+            printf("Program is requested to quit..");
             break;
         default:
-            printf("\nNo option selected try again...\n");
+            printf("\nNo option selected try again..\n");
         }
         printf("\n");
         system("pause");
