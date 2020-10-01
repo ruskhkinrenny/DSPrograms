@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<conio.h>
 int main(){
     int arr[10], size, choice, choice2, i, j, data, loc, updated, found;
     printf("How many elements do you want to enter? ");
