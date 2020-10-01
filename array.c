@@ -13,13 +13,14 @@ int main(){
         switch(choice){
         case 1:
             if(size==0){
-                printf("Array is empty.");
+                printf("Array is empty");
                 break;
             }
-            printf("Array : ");
+            printf("Array: ");
             for(i=0;i<size;i++)
                 printf("%d ", arr[i]);
             break;
+                
         case 2:
             if(size==10)
                 printf("\nOverflow\n");
@@ -37,6 +38,7 @@ int main(){
                     arr[0] = data;
                     size++;
                     break;
+                        
                 case 2:
                     printf("\nLocation : ");
                     scanf("%d", &loc);
@@ -53,6 +55,7 @@ int main(){
                     arr[loc] = data;
                     size++;
                     break;
+                        
                 case 3:
                     printf("Enter Number : ");
                     scanf("%d", &data);
@@ -74,7 +77,7 @@ int main(){
                 printf("\nUnderflow\n");
             else{
                 updated = 1;
-                printf("DELETION : \t1>Beginning\t2>Location\t3>End\nAny other key to abort deletion...\nOption : ");
+                printf("DELETION : \t1>Beginning\t2>Location\t3>End\nAny other key to abort deletion..\nOption : ");
                 scanf("%d", &choice2);
                 switch(choice2){
                 case 1:
@@ -129,7 +132,7 @@ int main(){
                 }
             }
             if(!found)
-                printf(" Not found");
+                printf("Not found");
             break;
         case 5:
                 if(size==0){
@@ -157,7 +160,7 @@ int main(){
                     }
                     break;
                 case 2:
-                    printf("Performing Selection sort in decreasing order...\n");
+                    printf("Performing Selection sort in decreasing order..\n");
                     for(i=0;i<size;i++){
                         int max = i;
                         for(j=i+1;j<size;j++){
@@ -177,16 +180,16 @@ int main(){
                 }
 
                 if(updated){
-                    printf("Updated Array : ");
+                    printf("Updated Array: ");
                     for(i=0;i<size;i++)
                         printf("%d ", arr[i]);
                 }
             break;
         case 0:
-            printf("Program is requested to quit...");
+            printf("Program is requested to quit..");
             break;
         default:
-            printf("\nNo option selected try again...\n");
+            printf("\nNo option selected try again..\n");
         }
         printf("\n");
         system("pause");
